@@ -1,0 +1,212 @@
+{
+  "info": {
+    "_postman_id": "dfef9655-f803-4987-b004-c9f1f1571a51",
+    "name": "SmartFunds Bank",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "56560630",
+    "_collection_link": "https://go.postman.co/collection/56560630-dfef9655-f803-4987-b004-c9f1f1571a51?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Onboard Customer",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/api/customers/onboard",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "customers",
+            "onboard"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Balance",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/api/accounts/:accountNumber/balance",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "accounts",
+            ":accountNumber",
+            "balance"
+          ],
+          "variable": [
+            {
+              "key": "accountNumber",
+              "value": ""
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Name Enquiry",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/api/accounts/:accountNumber/name-enquiry",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "accounts",
+            ":accountNumber",
+            "name-enquiry"
+          ],
+          "variable": [
+            {
+              "key": "accountNumber",
+              "value": ""
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Account",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/api/accounts/:accountNumber",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "accounts",
+            ":accountNumber"
+          ],
+          "variable": [
+            {
+              "key": "accountNumber",
+              "value": ""
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Intra-Bank Transfer",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/api/transfers/intra-bank",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "transfers",
+            "intra-bank"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Inter-Bank Transfer",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/api/transfers/inter-bank",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "transfers",
+            "inter-bank"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Transaction Status",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/api/transactions/:reference",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "transactions",
+            ":reference"
+          ],
+          "variable": [
+            {
+              "key": "reference",
+              "value": ""
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Customer Transaction History",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/api/transactions/customer/:customerId",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "transactions",
+            "customer",
+            ":customerId"
+          ],
+          "variable": [
+            {
+              "key": "customerId",
+              "value": ""
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
